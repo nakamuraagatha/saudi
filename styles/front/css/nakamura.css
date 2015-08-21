@@ -1,0 +1,70 @@
+.nakamura-head {
+	background: #ffffff;
+}
+
+.nakamura-top-a {
+	background: #464547;
+}
+
+.tm-navbar {
+	background:#ED1B2F;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+.uk-navbar-nav > li > a {
+	color:#ffffff;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0px 34px;
+}
+
+.uk-navbar-nav > li.uk-active > a {
+	color:#ffffff;
+	background: #CC1626;
+}
+
+.uk-panel-space {
+    padding: 10px 110px;
+}
+
+.tm-toolbar {
+	margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.uk-icon-button {
+	color:#ffffff;
+	background:#ED1B2F;
+}
+
+.tm-headerbar {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.tm-top-b {
+	margin-top: 30px;
+}
+
+.white-text {
+	color: #ffffff;
+}
+
+.uk-icon-button:hover,
+.uk-icon-button:focus {
+	color:#ED1B2F;
+	background:#ffffff;
+}
+
+.uk-panel-box {
+    background: #ED1B2F;
+}
+
+@media screen and (max-width: 400px) {
+  .tm-navbar {
+	background:#ffffff;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	}
+}
+

@@ -1,0 +1,276 @@
+/* Base
+ ========================================================================== */
+
+html {
+    overflow-y: scroll;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Layout
+ ========================================================================== */
+
+
+.tm-background { background: #252525; }
+
+/*
+ * Blocks
+ */
+
+.tm-middle,
+.tm-section,
+.tm-footer { padding: 50px 0; }
+
+/* Tablet and bigger */
+@media (min-width: 768px) {
+
+    .tm-middle,
+    .tm-section,
+    .tm-footer { padding: 90px 0; }
+
+}
+
+/* Large screen and bigger */
+@media (min-width: 1220px) {
+
+    .tm-middle,
+    .tm-section,
+    .tm-footer { padding: 120px 0; }
+
+}
+
+
+/*
+ * Middle
+ */
+
+.tm-middle { background: #fff; }
+
+/* Tablet and bigger */
+@media (min-width: 768px) {
+
+    .tm-sidebar {
+        margin-right: -1px !important;
+        border-right: 1px solid #E5E5E5;
+    }
+
+    .tm-main {
+        padding-left: 50px !important;
+        border-left: 1px solid #E5E5E5;
+    }
+
+    .tm-sidebar .uk-panel { padding-right: 20px; }
+
+}
+
+/*
+ * Sections
+ */
+
+.tm-section .uk-heading-large { margin-bottom: 20px; }
+.tm-section .uk-text-large { margin-bottom: 60px; }
+
+.tm-section-color-1 { background: #2ba3d4 url("../images/bg_teaser.svg") 50% 50% no-repeat; }
+
+/* Desktop and bigger */
+@media (max-width: 959px) {
+
+    .tm-section-color-1 { background-image: none; }
+
+}
+
+.tm-section-color-2 { background: #3dc0f1; }
+
+.tm-section-colored,
+.tm-section-colored h1,
+.tm-section-colored h2,
+.tm-section-colored a:not([class]) { color: #fff !important; }
+
+.tm-section-color-2 a { text-decoration: underline; }
+
+.tm-section-color-white { background: #fff; }
+
+/* Tablet and bigger */
+@media (min-width: 768px) {
+
+    .tm-section-color-white .uk-grid-divider:not(:empty) > [class*='uk-width-medium-']:not(.uk-width-medium-1-1):nth-child(n+2) { border-left: 1px dashed #ddd; }
+    .tm-section-color-2 .uk-grid-divider:not(:empty) > [class*='uk-width-medium-']:not(.uk-width-medium-1-1):nth-child(n+2) { border-left: 1px dashed rgba(255,255,255,0.4); }
+
+}
+
+/*
+ * Header section
+ */
+
+.tm-logo { margin: 10px 0 20px 0; }
+
+.tm-button-download {
+    margin: -30px 0 15px 0;
+    /* Style */
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    background: #fff;
+    border: none;
+    color: #2ba3d4 !important;
+    /* Size */
+    min-height: 50px;
+    padding: 0 30px;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.tm-button-download:hover {
+    background: #82cff0;
+    color: #fff !important;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    -webkit-transition: background-color .15s ease-in-out;
+    transition: background-color .15s ease-in-out;
+}
+
+.tm-button-download:focus,
+.tm-button-download:active {
+    background: #2e93bc;
+    color: #fff !important;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.15),
+                inset 0 -1px 0px rgba(0,0,0,0.05),
+                inset 1px 0px 0px rgba(0,0,0,0.05),
+                inset -1px 0px 0px rgba(0,0,0,0.05);
+    -webkit-transition: background-color .05s ease-in-out;
+    transition: background-color .05s ease-in-out;
+}
+
+.tm-image-pull { margin-bottom: -10px; }
+
+/*
+ * Community
+ */
+
+.tm-margin-large-bottom { margin-bottom: 80px; }
+
+.tm-panel-link,
+.tm-panel-link:hover {
+    text-decoration: none;
+    color: #444;
+}
+
+.tm-panel-link {
+    padding: 30px 30px 60px 30px;
+    border: 1px solid #e5e5e5;
+}
+
+.tm-panel-link:after {
+    content: "";
+    display: none;
+    position: absolute;
+    height: 5px;
+    right: -1px;
+    left: -1px;
+    bottom: -1px;
+    background: #0BA1D8;
+}
+
+.tm-panel-link:hover:after { display: block; }
+
+.tm-panel-link:hover h2 { color: #0BA1D8; }
+
+/* Only phones */
+.tm-grid-margin-large .uk-grid-margin { margin-top: 50px; }
+
+.tm-icon {
+    position: relative;
+    width: 80px;
+    margin: -60px auto 0 auto;
+    border-radius: 5px;
+    background: #0BA1D8;
+    line-height: 80px;
+    color: #fff;
+}
+
+.tm-icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    border: 10px solid #0BA1D8;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom: none;
+}
+
+.tm-panel-link { -webkit-backface-visibility: hidden; }
+
+.tm-panel-link:hover .tm-icon {
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+}
+
+/*
+ * Footer
+ */
+
+.tm-footer .uk-subnav-line > li:before { border-color: #ddd; }
+
+.tm-footer,
+.tm-footer a { color: #ddd !important; }
+.tm-footer a:hover { color: #fff !important; }
+
+
+
+/* Custom content
+ ========================================================================== */
+
+/*
+ * Style grid for showcase purpose
+ */
+
+.tm-grid-truncate code {
+    /* Truncate */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* Nedded */
+    max-width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 16px;
+}
+
+.tm-icons > [class*="uk-width-"] {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/*
+ * Generate different grid panel colors
+ */
+
+.tm-grid-colors > * > * { padding: 20px; }
+
+.tm-grid-colors > :nth-child(8n-7) > * { background: rgba(130,200,240,0.1); }
+.tm-grid-colors > :nth-child(8n-6) > * { background: rgba(130,200,240,0.15); }
+.tm-grid-colors > :nth-child(8n-5) > * { background: rgba(130,200,240,0.2); }
+.tm-grid-colors > :nth-child(8n-4) > * { background: rgba(130,200,240,0.25); }
+.tm-grid-colors > :nth-child(8n-3) > * { background: rgba(130,200,240,0.3); }
+.tm-grid-colors > :nth-child(8n-2) > * { background: rgba(130,200,240,0.35); }
+.tm-grid-colors > :nth-child(8n-1) > * { background: rgba(130,200,240,0.40); }
+.tm-grid-colors > :nth-child(8n) > * { background: rgba(130,200,240,0.45); }
+
+/*
+ * Generate different grid panel heights
+ */
+
+.tm-grid-heights > :nth-child(8n-7) > * { height: 80px; }
+.tm-grid-heights > :nth-child(8n-6) > * { height: 100px; }
+.tm-grid-heights > :nth-child(8n-5) > * { height: 160px; }
+.tm-grid-heights > :nth-child(8n-4) > * { height: 120px; }
+.tm-grid-heights > :nth-child(8n-3) > * { height: 180px; }
+.tm-grid-heights > :nth-child(8n-2) > * { height: 130px; }
+.tm-grid-heights > :nth-child(8n-1) > * { height: 150px; }
+.tm-grid-heights > :nth-child(8n) > * { height: 110px; }
